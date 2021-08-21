@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-size: 16px;
+}
+body {
+  width: 100%;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Loading Page*/
+.load {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  user-select: none;
+  background: #2c3e50;
+  color: #fff;
+}
+/* animation, animeJS */
+.load .ml4 {
+  margin: auto;
+  height: 300px;
+  max-width: 600px;
+  margin-top: 10%;
+  position: relative;
+  font-weight: 900;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load .loader {
+  display: inline-block;
+  font-family: serif;
+}
+.load .ml4 .letters {
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 1em;
+  right: 0;
+  opacity: 1;
+}
+
+/* For Progress Line */
+.load .progress {
+  margin: auto;
+  width: 300px;
+  height: 4px;
+  position: relative;
+  margin-top: -10%;
+}
+
+.load .progress .line {
+  width: 0%;
+  height: 100%;
+  background: rgb(52, 99, 255);
+  border-radius: 4px;
+}
