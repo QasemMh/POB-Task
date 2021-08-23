@@ -1,4 +1,4 @@
-let $ = function (selector) {
+let get = function (selector) {
   return document.querySelector(selector);
 };
 
@@ -68,12 +68,12 @@ function loadingPage() {
 loadingPage();
 //remove  Loading page after finish
 setTimeout(() => {
-  $(".load").style.display = "none";
+  get(".load").style.display = "none";
 }, 3700);
 
 //Loading page progress Line
-let loader = $(".loader");
-let item = $(".line");
+let loader = get(".loader");
+let item = get(".line");
 const lengthOfLine = item.dataset.line;
 let counter = 0;
 let x = setInterval(run, 35);

@@ -1,14 +1,16 @@
 //NavBar:
-let navbar = $(".navbar");
-let menu = $(".menu");
+let navbar = get(".navbar");
+let menu = get(".menu");
 let menuItem = document.querySelectorAll(".nav-item");
 let toggle = true;
 
 //Hide / Show Navbar
 menu.addEventListener("click", hideShow2);
-menuItem.forEach((e) => {
-  e.addEventListener("click", hideShow2);
-});
+
+// menuItem.forEach((e) => {
+//   e.addEventListener("click", hideShow2);
+// });
+
 window.addEventListener("resize", () => {
   if (window.matchMedia("max-width>650px")) {
     navbar.style.height = "40px";
@@ -35,8 +37,8 @@ SliderCount = SliderItem.length;
 CurrentSlide = 1;
 
 //next and prev
-Next = document.querySelector("#next");
-Prev = document.querySelector("#prev");
+Next = get("#next");
+Prev = get("#prev");
 
 Next.onclick = NextSlide;
 Prev.onclick = PrevSlide;
@@ -181,7 +183,7 @@ function animeTxt2() {
 //text anime. for silde 3, pure JS
 function animeTxt3() {
   //Text Animation
-  let text = $(".fancy");
+  let text = get(".fancy");
   let strText = text.textContent;
   let splitText = strText.split("");
 
@@ -228,3 +230,7 @@ const typed2 = new Typed("#typed2", {
   backDelay: 1000,
   startDelay: 2000,
 });
+//scrolling-3d
+//jq
+ 
+ 
