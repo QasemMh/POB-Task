@@ -662,11 +662,24 @@ footer {
     font-size: 18px;
   }
 }
-/* For Slider Item */
+
 @media (max-width: 500px) {
+  /* Fro Section 1 */
+  .product .content .text p {
+    font-size: 14px;
+  }
+  /* Fro Section 2, Video */
+  .video-section video {
+    position: absolute;
+    top: 0;
+    left: -80%;
+  }
+
   .video-section .content h1 {
     font-size: 2rem;
   }
+
+  /* For Slider Item */
   .container {
     max-width: 500px;
   }
