@@ -613,6 +613,29 @@ footer {
     display: inline-block;
     margin: 0 10px;
   }
+
+  /* For Search box */
+  nav .search-box {
+    margin-left: 0px;
+    border: 1px solid #fff;
+  }
+  nav .search-box .search-btn {
+    background: #fff;
+    color: #1bbc9b;
+  }
+  nav .search-box .search-txt {
+    width: 200px;
+    padding-left: 15px;
+  }
+  nav .search-box:hover .search-btn {
+    background: #1bbc9b;
+    color: #fff;
+  }
+  nav .search-box:hover {
+    border: 1px solid #1bbc9b;
+  }
+
+  /*  */
 }
 
 /* Navbar in  landscape*/
