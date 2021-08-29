@@ -230,7 +230,5 @@ const typed2 = new Typed("#typed2", {
   backDelay: 1000,
   startDelay: 2000,
 });
-//scrolling-3d
-//jq
- 
- 
+
+//
