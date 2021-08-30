@@ -463,99 +463,36 @@ footer {
 */
 /* Media Query */
 
-@media (max-width: 320px) {
-  .container {
-    max-width: 320px;
-  }
-}
-@media (max-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-
 /*  */
-@media (max-width: 500px) {
+
+/* For Slider*/
+@media (max-width: 1160px) {
   .container {
-    max-width: 500px;
-  }
-  /* Fro Section 1 */
-  .product .content .text p {
-    font-size: 14px;
-  }
-  /* Fro Section 2, Video */
-  .video-section video {
-    position: absolute;
-    top: 0;
-    left: -80%;
-  }
-
-  .video-section .content h1 {
-    font-size: 2rem;
-  }
-
-  /* For Slider Item */
-
-  .slider-item .ml5,
-  .slider-item .ml14 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .slider-item .fancy {
-    font-size: 3rem;
-  }
-
-  .slider-item .content p {
-    font-size: 16px;
+    max-width: 1160px;
   }
   .slider-item .content {
-    margin-top: -50px;
+    margin-left: 0;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    backdrop-filter: blur(6px);
   }
-}
-@media (max-width: 600px) {
-  .container {
-    max-width: 600px;
+
+  .slider-container .slider-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  .product .content .image img {
+    position: relative;
+    margin-left: -100px;
   }
 }
 
-/* For Slider Item */
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
   .container {
-    max-width: 700px;
-  }
-  .slider-container {
-    margin-top: -10px;
-  }
-
-  .controls .prev,
-  .controls .next {
-    font-size: 14px;
-  }
-
-  .slider-item .ml5 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .slider-item .ml14 {
-    font-size: 2rem;
-  }
-  .slider-item .fancy {
-    font-size: 3rem;
-  }
-
-  .slider-item .content p {
-    font-size: 18px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (max-width: 900px) {
-  .container {
-    max-width: 900px;
+    max-width: 1024px;
   }
 }
 
@@ -622,32 +559,106 @@ footer {
     border: 1px solid #fff;
   }
 }
-@media (max-width: 1024px) {
+
+@media (max-width: 900px) {
   .container {
-    max-width: 1024px;
+    max-width: 900px;
   }
 }
-/* For Slider*/
-@media (max-width: 1160px) {
+@media (max-width: 768px) {
   .container {
-    max-width: 1160px;
+    max-width: 768px;
+  }
+}
+/* For Slider Item */
+@media (max-width: 700px) {
+  .container {
+    max-width: 700px;
+  }
+  .slider-container {
+    margin-top: -10px;
+  }
+
+  .controls .prev,
+  .controls .next {
+    font-size: 14px;
+  }
+
+  .slider-item .ml5 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .slider-item .ml14 {
+    font-size: 2rem;
+  }
+  .slider-item .fancy {
+    font-size: 3rem;
+  }
+
+  .slider-item .content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+  /* nav bar */
+  .navbar__item {
+    margin: 0;
+  }
+  .navbar__links {
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+
+  /* Fro Section 1 */
+  .product .content .text p {
+    font-size: 14px;
+  }
+  /* Fro Section 2, Video */
+  .video-section video {
+    position: absolute;
+    top: 0;
+    left: -80%;
+  }
+
+  .video-section .content h1 {
+    font-size: 2rem;
+  }
+
+  /* For Slider Item */
+
+  .slider-item .ml5,
+  .slider-item .ml14 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .slider-item .fancy {
+    font-size: 3rem;
+  }
+
+  .slider-item .content p {
+    font-size: 16px;
   }
   .slider-item .content {
-    margin-left: 0;
-    padding: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    backdrop-filter: blur(6px);
+    margin-top: -50px;
   }
-
-  .slider-container .slider-item {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 480px;
   }
+}
 
-  .product .content .image img {
-    position: relative;
-    margin-left: -100px;
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
   }
 }

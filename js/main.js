@@ -8,9 +8,10 @@ let toggle = true;
 menu.addEventListener("click", hideShow2);
 
 window.addEventListener("resize", () => {
-  if (window.matchMedia("max-width>950px")) {
+  if (!(window.matchMedia("(max-width: 950px)").matches)) {
     navbar.classList.remove("active");
   }
+ 
 });
 
 function hideShow2() {
