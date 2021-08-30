@@ -20,8 +20,7 @@
     <title>Task 1</title>
   </head>
   <body>
-
-     <!-- loading page -->
+    <!-- loading page -->
     <div class="load">
       <h1 class="ml4">
         <span class="letters letters-1">Ready</span>
@@ -50,14 +49,9 @@
                 <a href="#" class="navbar__link">HOME</a>
               </li>
               <li class="navbar__item">
-                <a href="#" class="navbar__link">SHOP</a>
+                <a href="#shop" class="navbar__link">SHOP</a>
               </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__link">CONTACT</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__link">CONTACT</a>
-              </li>
+
               <li class="navbar__item">
                 <a href="#" class="navbar__link">
                   <span>CART <i class="fa fa-cart-plus"></i></span>
@@ -65,7 +59,7 @@
               </li>
             </ul>
           </div>
-          <!--  -->
+          <!-- TASK-2 Search box -->
           <div class="box">
             <div class="search-box">
               <input
@@ -76,10 +70,10 @@
               <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
             </div>
           </div>
-          <!--  -->
+          <!-- TASK-3 login, sign up -->
           <ul class="navbar__ul login">
             <li class="navbar__item btn">
-              <a href="#" class="navbar__link a"
+              <a href="login.html" target="_blanck" class="navbar__link a"
                 >sign in <i class="fas fa-external-link-alt"></i>
               </a>
             </li>
@@ -89,6 +83,7 @@
     </div>
 
     <!-- end nav -->
+    <!-- Slider -->
     <div class="main">
       <!-- slider -->
       <div class="slider scrolling-3d">
@@ -188,8 +183,8 @@
       </div>
     </div>
 
-    <!-- Section 3 -->
-    <!-- Task 2 -->
+    <!-- vedio-->
+    <!-- Task-2 -->
     <div class="video-section">
       <div class="container">
         <video autoplay muted loop playsinline>
@@ -202,8 +197,32 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Aspernatur, pariatur!
           </p>
+
+          <!-- Task-3 Audio -->
+          <audio controls>
+            <source
+              src="image/Audio/vedio1 (online-audio-converter.com).mp3"
+              type="audio/mp3"
+            />
+            <source
+              src="image/Audio/vedio1 (online-audio-converter.com).ogg"
+              type="audio/ogg"
+            />
+            Your browser does not support the audio element.
+          </audio>
         </div>
       </div>
+    </div>
+
+    <!-- Task-3 Audio Background -->
+    <div class="audio-bg">
+      <i class="fas fas fa-volume-off active" id="audio1"></i>
+      <i class="fas fas fa-volume-up" id="audio2"></i>
+
+      <!-- Hidden Audio -->
+      <audio style="display: none" id="audio_">
+        <source src="image/Audio/audio-1.mp3" type="audio/mp3" />
+      </audio>
     </div>
     <!-- footer -->
     <footer>

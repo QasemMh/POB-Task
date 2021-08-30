@@ -8,10 +8,9 @@ let toggle = true;
 menu.addEventListener("click", hideShow2);
 
 window.addEventListener("resize", () => {
-  if (!(window.matchMedia("(max-width: 950px)").matches)) {
+  if (!window.matchMedia("(max-width: 950px)").matches) {
     navbar.classList.remove("active");
   }
- 
 });
 
 function hideShow2() {
@@ -228,4 +227,26 @@ const typed2 = new Typed("#typed2", {
   startDelay: 2000,
 });
 
-//
+//TASK-3 Audio background
+//play, pause Aduio
+let volume = get(".audio-bg");
+let mute_audio = get("#audio1");
+let play_audio = get("#audio2");
+let active_audio = get("#audio_");
+//set audio
+active_audio.loop = true;
+active_audio.volume = 0.3;
+
+volume.addEventListener("click", () => {
+  if (mute_audio.classList.contains("active")) {
+    play_audio.classList.add("active");
+    mute_audio.classList.remove("active");
+
+    active_audio.play();
+  } else {
+    mute_audio.classList.add("active");
+    play_audio.classList.remove("active");
+
+    active_audio.pause();
+  }
+});
