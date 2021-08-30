@@ -1,19 +1,15 @@
 //NavBar:
 let navbar = get(".navbar");
-let menu = get(".menu");
+let menu = get(".navbar__menu");
 let menuItem = document.querySelectorAll(".nav-item");
 let toggle = true;
 
 //Hide / Show Navbar
 menu.addEventListener("click", hideShow2);
 
-// menuItem.forEach((e) => {
-//   e.addEventListener("click", hideShow2);
-// });
-
 window.addEventListener("resize", () => {
-  if (window.matchMedia("max-width>650px")) {
-    navbar.style.height = "40px";
+  if (window.matchMedia("max-width>950px")) {
+    navbar.classList.remove("active");
   }
 });
 
