@@ -473,29 +473,12 @@ footer {
     max-width: 480px;
   }
 }
-@media (max-width: 600px) {
-  .container {
-    max-width: 600px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (max-width: 900px) {
-  .container {
-    max-width: 900px;
-  }
-}
-@media (max-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
 
 /*  */
 @media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
   /* Fro Section 1 */
   .product .content .text p {
     font-size: 14px;
@@ -527,12 +510,20 @@ footer {
     font-size: 16px;
   }
   .slider-item .content {
-    margin-top: -100px;
+    margin-top: -50px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 600px;
   }
 }
 
 /* For Slider Item */
 @media (max-width: 700px) {
+  .container {
+    max-width: 700px;
+  }
   .slider-container {
     margin-top: -10px;
   }
@@ -543,18 +534,28 @@ footer {
   }
 
   .slider-item .ml5 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
   }
   .slider-item .ml14 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .slider-item .fancy {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .slider-item .content p {
     font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    max-width: 900px;
   }
 }
 
@@ -574,7 +575,7 @@ footer {
   }
   .navbar__ul.login {
     order: 1;
-   }
+  }
   .navbar__menu {
     display: block;
     font-size: 30px;
@@ -621,8 +622,16 @@ footer {
     border: 1px solid #fff;
   }
 }
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
 /* For Slider*/
 @media (max-width: 1160px) {
+  .container {
+    max-width: 1160px;
+  }
   .slider-item .content {
     margin-left: 0;
     padding: 30px;
