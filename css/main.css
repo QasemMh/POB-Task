@@ -16,6 +16,7 @@ body {
   font-family: "Raleway", sans-serif;
   color: #000;
   position: relative;
+  /* background: #edf0f5; */
 }
 html,
 body {
@@ -370,6 +371,12 @@ nav .search-box:hover {
 /* Section 2 */
 .product {
   padding: 10px 0;
+ }
+.product.product-1 {
+  margin-top: 80px;
+}
+.product * {
+  box-sizing: unset;
 }
 .product .content {
   display: flex;
@@ -397,8 +404,96 @@ nav .search-box:hover {
 .product .content .text p {
   margin: 10px 0 30px 0;
 }
-.product .content h4 {
-  cursor: pointer;
+/** TASK-3 Style on Button */
+.product .btn {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.product .btn,
+.btn-2 a {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  text-align: center;
+
+  padding: 15px 20px;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  width: 200px;
+  color: #000;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+
+  border: 1px solid transparent;
+}
+
+.product .btn:hover {
+  color: #fff;
+  background: #1bbc9b;
+  box-shadow: 0 0 10px #1bbc9b, 0 0 40px #1bbc9b, 0 0 80px #1bbc9b;
+  transition-delay: 1s;
+}
+.product .btn span {
+  position: absolute;
+  display: block;
+}
+.product .btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #1bbc9b);
+}
+.product .btn:hover span:nth-child(1) {
+  left: 100%;
+  transition: all 1s;
+}
+.product .btn span:nth-child(2) {
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #1bbc9b);
+}
+.product .btn:hover span:nth-child(2) {
+  left: -100%;
+  transition: all 1s;
+}
+.product .btn span:nth-child(3) {
+  top: 100%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #1bbc9b);
+}
+.product .btn:hover span:nth-child(3) {
+  top: -100%;
+  transition: all 1s;
+}
+.product .btn span:nth-child(4) {
+  top: -100%;
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #1bbc9b);
+}
+.product .btn:hover span:nth-child(4) {
+  top: 100%;
+  transition: all 1s;
+}
+/* Button 2 */
+.btn-2 a {
+  position: relative;
+  display: block;
+}
+.btn-2 a:hover {
+  background-image: linear-gradient(45deg, #12bcfe, #1bbc9b);
+  color: #fff;
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 /* End Section 2 */
@@ -460,7 +555,7 @@ nav .search-box:hover {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.audio-bg i.active{
+.audio-bg i.active {
   display: block;
 }
 .audio-bg i {
@@ -670,14 +765,21 @@ footer {
   .slider-item .content {
     margin-top: -50px;
   }
-  #typed,
-  #typed2 {
-    font-size: 10px;
+  /* Task-3 button hover */
+  .product .btn,
+  .btn-2 a {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    width: 170px;
   }
 }
 @media (max-width: 480px) {
   .container {
     max-width: 480px;
+  }
+  #typed,
+  #typed2 {
+    font-size: 12px;
   }
 }
 
