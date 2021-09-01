@@ -17,6 +17,152 @@
     <title>Account</title>
   </head>
   <body>
-      
+    <div class="container">
+      <div class="forms-container">
+        <!--  -->
+        <div class="login">
+          <!-- login -->
+          <form action="" class="login__form">
+            <h2 class="login__title">Sign in</h2>
+
+            <div class="login__field">
+              <i class="fas fa-user login__icon"></i>
+              <input type="text" placeholder="username" class="login__input" />
+            </div>
+            <div class="login__field">
+              <i class="fas fa-lock login__icon"></i>
+              <input
+                type="password"
+                placeholder="password"
+                class="login__input"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Login"
+              class="login__btn login__solid"
+            />
+            <p class="login__social__text">Or Sign in with social platforms</p>
+            <div class="login__social__media">
+              <a href="#" class="login__social__icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="login__social__icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="login__social__icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="login__social__icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+
+          <!-- sign up -->
+          <form action="" class="signup__form">
+            <h2 class="login__title">Sign up</h2>
+
+            <div class="login__field">
+              <i class="fas fa-user login__icon"></i>
+              <input type="text" placeholder="username" class="login__input" />
+            </div>
+
+            <div class="login__field">
+              <i class="fas fa-envelope login__icon"></i>
+              <input type="text" placeholder="email" class="login__input" />
+            </div>
+
+            <div class="login__field">
+              <i class="fas fa-lock login__icon"></i>
+              <input
+                type="password"
+                placeholder="password"
+                class="login__input"
+              />
+            </div>
+            <div class="login__field">
+              <i class="fas fa-lock login__icon"></i>
+              <input
+                type="password"
+                placeholder="repassword"
+                class="login__input"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Sign up"
+              class="login__btn login__solid"
+            />
+            <p class="login__social__text">Or Sign up with social platforms</p>
+            <div class="login__social__media">
+              <a href="#" class="login__social__icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="login__social__icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="login__social__icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="login__social__icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+ 
+
+    <!--  -->
+    <div class="panels-container">
+      <div class="panel panel__left">
+        <div class="panel__content panel__left__content">
+          <h3 class="panel__title">New Here?</h3>
+          <p class="panel__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas,
+            obcaecati.
+          </p>
+          <button class="panel__btn panel__signup__btn">Sign up</button>
+        </div>
+        <img
+          src="image/log.svg"
+          class="panel__image panel__left__image"
+          alt=""
+        />
+      </div>
+      <!--  -->
+      <div class="panel panel__right">
+        <div class="panel__content panel__right__content">
+          <h3 class="panel__title">Welcome Back</h3>
+          <p class="panel__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas,
+            obcaecati.
+          </p>
+          <button class="panel__btn panel__login__btn">Sign in</button>
+        </div>
+        <img
+          src="image/register.svg"
+          class="panel__image panel__right__image"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- end container -->
+  </div>
+    <script>
+      let signin__btn = document.querySelector(".panel__login__btn");
+      let signup__btn = document.querySelector(".panel__signup__btn");
+      let container = document.querySelector(".container");
+
+      signin__btn.addEventListener("click", () => {
+        container.classList.remove("signup-mode");
+      });
+      signup__btn.addEventListener("click", () => {
+        container.classList.add("signup-mode");
+      });
+
+     </script>
   </body>
 </html>

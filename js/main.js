@@ -1,20 +1,26 @@
 //NavBar:
 let navbar = get(".navbar");
 let menu = get(".navbar__menu");
-let menuItem = document.querySelectorAll(".nav-item");
+let menuItem = document.querySelectorAll(".navbar__item");
 let toggle = true;
 
 //Hide / Show Navbar
-menu.addEventListener("click", hideShow2);
+menu.addEventListener("click", hideShow);
+menuItem.forEach((e) => {
+  e.addEventListener("click", hideNavbar);
+});
 
 window.addEventListener("resize", () => {
   if (!window.matchMedia("(max-width: 950px)").matches) {
-    navbar.classList.remove("active");
+    hideNavbar();
   }
 });
 
-function hideShow2() {
+function hideShow() {
   navbar.classList.toggle("active");
+}
+function hideNavbar() {
+  navbar.classList.remove("active");
 }
 //End NavBar
 
