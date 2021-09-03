@@ -47,7 +47,8 @@ body {
   right: 50%;
   z-index: 6;
   transform: translateY(-50%);
-  background: linear-gradient(-45deg, #4481eb, #04befe);
+  /* background: linear-gradient(-45deg, #4481eb, #04befe); */
+  background: linear-gradient(-45deg, #1bbc9b, #36ac94);
   transition: all 2s ease-in-out;
 }
 .forms-container {
@@ -135,7 +136,8 @@ form {
   outline: none;
   border-radius: 4px;
   cursor: pointer;
-  background: #5995fd;
+  /* background: #5995fd; */
+  background: #1bbc9b;
   color: #fff;
   text-transform: uppercase;
   margin: 10px 0;
@@ -177,7 +179,8 @@ form {
   transform: all 0.3s ease;
 }
 .login__social__icon:hover {
-  color: #4481eb;
+  /* color: #4481eb; */
+  color: #1bbc9b;
   border-color: #4481eb;
 }
 
