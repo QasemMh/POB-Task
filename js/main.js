@@ -241,7 +241,7 @@ let play_audio = get("#audio2");
 let active_audio = get("#audio_");
 //set audio
 active_audio.loop = true;
-active_audio.volume = 0.3;
+active_audio.volume = 0.4;
 
 volume.addEventListener("click", () => {
   if (mute_audio.classList.contains("active")) {
